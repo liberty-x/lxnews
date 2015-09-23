@@ -8,7 +8,7 @@ Users input a search term that returns images tagged with this term from instagr
 Extension - the app will alst return articles from guardian tagged wit this term.
 
 ##Depecancies
-*Instagram API
-*Guardian API (hopefully)
+* Instagram API
+* Guardian API (hopefully)
 
 Hosted on Github pages
