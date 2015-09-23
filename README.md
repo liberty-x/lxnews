@@ -1,7 +1,7 @@
 # LX News
 ## Who?
 
-Liberty-X, a project team in the 6th iteration of the Founders & Coders academy. Members: Justen Barget, Rachel Black, Huw Davies, Ruth Uwemedimo.
+Liberty-X, a project team in the 6th iteration of the Founders & Coders academy. Members: Justen Barget, Rachel Black, Huw Davies and Ruth Uwemedimo.
 
 ## What?
 
