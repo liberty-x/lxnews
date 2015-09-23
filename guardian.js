@@ -13,6 +13,7 @@ console.log(request);
 
 
 
+
 var request = new XMLHttpRequest()
 var searchCriteria = document.getElementById('searchBar').value
 
