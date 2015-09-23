@@ -1,14 +1,41 @@
-# lxnews
+# LX News
+## Who?
 
-A client side simple one page app.
+Liberty-X, a project team in the 6th iteration of the Founders & Coders academy. Members: Justen Barget, Rachel Black, Huw Davies, Ruth Uwemedimo.
 
-##Functionality
-Users input a search term that returns images tagged with this term from instagram, with in a specificed area.
+## What?
 
-Extension - the app will alst return articles from guardian tagged wit this term.
+LX News will be a simple photo and news feed webpage. We are hosting this on GitHub Pages. We are conducting this project from the 23rd September to the 25th September. 
 
-##Depecancies
+## Why?
+
+We are experimenting with the use of various API keys and embedding feeds on our page.
+ 
+### Functionality
+
+Users input search terms in a search bar on the landing page that returns images tagged with these terms from instagram on a page which will link from the search button. 
+
+### Depedancies
 * Instagram API
-* Guardian API (hopefully)
+* Guardian API (stretch)
 
-Hosted on Github pages
+### Wireframes
+
+Landing page layout like so:
+
+![alt text](https://files.gitter.im/RachelBLondon/libert-x/zNfa/12033292_10153670404443872_256205823_n.jpg "Landing Page")
+
+Which will link to the instagram results page:
+
+![alt text](https://files.gitter.im/RachelBLondon/libert-x/PcJq/12026562_10153670404513872_41296169_n.jpg "Instagram Feed")
+
+###### Stretch Wireframes
+
+![alt text](https://files.gitter.im/RachelBLondon/libert-x/BlBN/12033790_10153670404398872_236751255_n.jpg "Guardian Articles Feed")
+
+###### Further Stretch Wireframes
+
+![alt text](https://files.gitter.im/RachelBLondon/libert-x/hLZd/12053199_10153670404533872_1271348400_n.jpg "Articles link from Images")
+
+We are using Trello to track tasks over the next 2 days. 
+
