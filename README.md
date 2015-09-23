@@ -31,9 +31,13 @@ Which will link to the instagram results page:
 
 ###### Stretch Wireframes
 
+Another page will display a list of guardian articles related to the search terms.
+
 ![alt text](https://files.gitter.im/RachelBLondon/libert-x/Y9Xf/12033790_10153670404398872_236751255_n_opt.jpg "Guardian Articles Feed")
 
 ###### Further Stretch Wireframes
+
+If there is time, we will link our instagram photos to corresponding guardian articles. 
 
 ![alt text](https://files.gitter.im/RachelBLondon/libert-x/w4AZ/12053199_10153670404533872_1271348400_n_opt.jpg "Articles link from Images")
 
