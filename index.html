@@ -15,16 +15,22 @@
       <button type="button" id="searchBtn" onclick="clickSearch();">Search</button>
     </form>
 
+		<!--tabs-->
+     <ul id="nav-tab" class="nav">
+          <li><a href="#instagram">Instagram</a></li>
+          <li class="active"><a href="#guardian">Guardian</a></li>
+     </ul>
 
-  <div id="resultsOne">
-    <h1>Popular Pictures</h1>
-    <ul class="popular"></ul>
-  </div>
+     <!-- Tab panes -->
+     <div class="tab-content">
+          <div class="tab-pane active" id="instagram">
+         <ul class="popular"></ul>
+          </div>
 
-  <div id="resultsTwo">
-      <h1>News</h1>
+          <div class="tab-pane" id="guardian">
       <p id="guardianResults"></p>
-  </div>
+          </div>
+     </div>
 
 
 		<!-- link to js file -->
