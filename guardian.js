@@ -1,21 +1,22 @@
-
-  var request = new XMLHttpRequest()
-  // request.onreadystatechange = function() {
-  //     if(request.readyState == 4) {
-  //         console.log(request);
-  //         document.getElementById('response').innerHTML = request.responseText;
-  //     };
-  // };
-  request.open("GET", "http://content.guardianapis.com/search?q=football&api-key=444t6y2skjxcdfkdrdragsde", true);
-  request.send();
-
-console.log(request);
-
-
-
-
 var request = new XMLHttpRequest()
-var searchCriteria = document.getElementById('searchBar').value
+//var searchCriteria = document.getElementById('searchBar').value.toString()
+//var url = "http://content.guardianapis.com/search?q="+searchCriteria+"&api-key=444t6y2skjxcdfkdrdragsde"
+var url = "http://content.guardianapis.com/search?q=food&api-key=444t6y2skjxcdfkdrdragsde"
 
-request.open("GET", "http://content.guardianapis.com/search?q="+searchCriteria+"&api-key=444t6y2skjxcdfkdrdragsde", true);
+request.onreadystatechange = function (){
+  if (request.readyState === 4 && request.status === 200) {
+    var JSONfile = JSON.parse(request.responseText).response.results;
+    displayResultsFunction(JSONfile);
+  }
+}
+request.open("GET", url, true);
 request.send();
+
+function displayResultsFunction(arr) {
+  var out = "";
+  for (var i = 5; i < 10; i++) {
+       out += '<a href="' + arr[i].webUrl + '">' +
+       arr[i].webTitle + '</a><br>';
+  }
+  document.getElementById("guardianResults").innerHTML = out;
+}
