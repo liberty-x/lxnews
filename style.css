@@ -1,1 +1,13 @@
-
+@media (min-width: 320px) {
+  .header {
+    background-image: url("https://goo.gl/sNtviM");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 15em;
+  }
+  html {
+    margin-top: 0;
+    display: inlinerelative;
+  }
+}

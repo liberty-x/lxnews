@@ -1,8 +1,13 @@
+document.getElementById('resultsOne').style.display = 'none';
+document.getElementById('resultsTwo').style.display = 'none';
+
 var request = new XMLHttpRequest()
 
 var clicked = false
 function clickSearch() {
   clicked = true;
+  document.getElementById('resultsOne').style.display = 'block';
+  document.getElementById('resultsTwo').style.display = 'block';
   var searchCriteria = document.getElementById('searchBar').value;
   var multipleWordSearch = searchCriteria.replace(/ /g, "%20");
   var url = "http://content.guardianapis.com/search?q=" + multipleWordSearch + "&api-key=444t6y2skjxcdfkdrdragsde"
@@ -22,7 +27,7 @@ request.onreadystatechange = function (){
 function displayResultsFunction(arr) {
   var out = "";
   for (var i = 5; i < 10; i++) {
-       out += '<a href="' + arr[i].webUrl + '">' +
+       out += '<a class="newsitem" href="' + arr[i].webUrl + '">' +
        arr[i].webTitle + '</a><br>';
   }
   document.getElementById("guardianResults").innerHTML = out;
