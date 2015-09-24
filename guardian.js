@@ -1,9 +1,9 @@
 var request = new XMLHttpRequest()
+
 // variable declared to test if search button has been clicked
 var clicked = false
-var numClicked = 0;
 function clickSearch() {
-  clicked = true;
+clicked = true;
   var searchCriteria = document.getElementById('searchBar').value;
   // this replaces spaces with the encoding %20 for multiple words (this signifies &s)
   var multipleWordSearch = searchCriteria.replace(/ /g, "%20");
@@ -19,15 +19,19 @@ function clickSearch() {
 }
 
 function displayData(response){
+  var element = document.getElementsByClassName("instaphotos");
+    for (index = element.length - 1; index >= 0; index--) {
+      element[index].parentNode.removeChild(element[index]);
+    }
   // creating array to push urls into
   var arrphotos = [];
   // for loop is accessing nested photo urls and pushing into array
-  for(var i = 0; i<6;i++){
+  for(var i = 0; i<9;i++){
     arrphotos.push(response['data'][i]['images']['low_resolution']['url']);
   }
   // for loop is creating an 'img' element for each array element,
   // specifying a source and class for them, then appending them to the body
-  for(var j = 0 ; j < 6 ; j++){
+  for(var j = 0 ; j < 9 ; j++){
     var oImg=document.createElement("img");
     oImg.setAttribute('src', arrphotos[j]);
     oImg.setAttribute('class', 'instaphotos');
