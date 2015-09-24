@@ -9,7 +9,7 @@ LX News will be a simple photo and news feed webpage. We are hosting this on Git
 
 ## Why?
 
-We are experimenting with the use of various API keys and embedding feeds on our page.
+We are experimenting with the use of various API keys and embedding feeds on our results page.
  
 ### Functionality
 
@@ -25,7 +25,7 @@ Landing page layout like so:
 
 ![alt text](https://files.gitter.im/RachelBLondon/libert-x/5R1O/12033292_10153670404443872_256205823_n_opt.jpg "Landing Page")
 
-Which will link to the instagram results page:
+The search button will link to the instagram results page:
 
 ![alt text](https://files.gitter.im/RachelBLondon/libert-x/XkUl/12026562_10153670404513872_41296169_n_opt.jpg "Instagram Feed")
 
@@ -41,5 +41,5 @@ If there is time, we will link our instagram photos to corresponding guardian ar
 
 ![alt text](https://files.gitter.im/RachelBLondon/libert-x/w4AZ/12053199_10153670404533872_1271348400_n_opt.jpg "Articles link from Images")
 
-We are using Trello to track tasks over the next 2 days. 
+We are using Trello [here](https://trello.com/b/XSNt2nz2/ixnews) to track tasks over the next 2 days. 
 

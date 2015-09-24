@@ -10,7 +10,3 @@
       done();
     },5000) ;
   });
-
-  test('Does the search button redirect to the results page', function(assert) {
-
-  });
