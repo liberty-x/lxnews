@@ -38,12 +38,12 @@ function displayData(response){
   // for loop is creating an 'img' element for each array element,
   // specifying a source and class for them, then appending them to the body
   for(var j = 0 ; j < 9 ; j++){
-    var photoDiv = document.createElement("div")
-    photoDiv.setAttribute('id', 'photoDest' + [j])
+    var photoDiv = document.createElement("div");
+    photoDiv.setAttribute('id', 'photoDest' + [j]);
     document.getElementById("instagram").appendChild(photoDiv);
     var oImg=document.createElement("img");
     oImg.setAttribute('src', arrphotos[j]);
-    oImg.setAttribute('class', 'unit');
+    oImg.setAttribute('class', 'pUnit');
     document.getElementById("photoDest" + [j]).appendChild(oImg);
   }
 }
@@ -58,14 +58,20 @@ request.onreadystatechange = function (){
   }
 }
 
-// runs through JSON array and creates links for each one on index.html
+// function for loops and fills in nested divs in the same way as instagram photo divs
 function displayResultsFunction(arr) {
-  var out = "";
-  for (var i = 0; i < 9; i++) {
-       out += '<a class="newsitem" href="' + arr[i].webUrl + '">' +
-       arr[i].webTitle + '</a><br>';
+ for(var i = 0 ; i < 9 ; i++){
+   var articleDiv = document.createElement("div");
+    articleDiv.setAttribute('id', 'articleDest' + [i]);
+    articleDiv.setAttribute('class', 'guardArticle')
+    document.getElementById("guardian").appendChild(articleDiv);
+    var oArt=document.createElement("a");
+    oArt.setAttribute('href', arr[i].webUrl);
+    oArt.setAttribute('class', 'aUnit');
+    oArt.setAttribute('id', 'artUnit' + [i])
+    oArt.innerHTML = arr[i].webTitle;
+    document.getElementById("articleDest" + [i]).appendChild(oArt);
   }
-  document.getElementById("guardianResults").innerHTML = out;
 }
 
 //tabbed menu bar
