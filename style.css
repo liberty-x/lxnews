@@ -1,1 +1,5 @@
 
+
+.nav .active a { color: red; }
+.tab-pane { display: none; }
+.tab-pane.active { display: block; }
