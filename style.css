@@ -1,6 +1,4 @@
-h3 {
-  display: none;
-}
+
 
 .nav .active a { color: red; }
 .tab-pane { display: none; }
