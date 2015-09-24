@@ -8,12 +8,23 @@
 
 <body>
 
-		<h1>LX News</h1>
+  <h1>LX News</h1>
 
-			<form>
-				<input type="text" id="searchBar"></input>
-				<button type="button" id="searchBtn">Search</button>
-			</form>
+    <form>
+      <input type="text" id="searchBar"></input>
+      <button type="button" id="searchBtn" onclick="clickSearch()">Search</button>
+    </form>
+
+
+  <div id="resultsOne">
+    <h1>Popular Pictures</h1>
+    <ul class="popular"></ul>
+  </div>
+
+  <div id="resultsTwo">
+      <h1>News</h1>
+      <p id="guardianResults"></p>
+  </div>
 
 		<!-- link to js file -->
     <script type="text/javascript" src="guardian.js"></script>
