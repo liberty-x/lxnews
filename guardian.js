@@ -8,7 +8,7 @@ clicked = true;
   // this replaces spaces with the encoding %20 for multiple words (this signifies &s)
   var multipleWordSearch = searchCriteria.replace(/ /g, "%20");
   var url = "http://content.guardianapis.com/search?q=" + multipleWordSearch + "&api-key=444t6y2skjxcdfkdrdragsde"
-  request.open("GET", url, false);
+  request.open("GET", url);
   request.send();
   // create script element in the HTML page
   var script = document.createElement('script');
