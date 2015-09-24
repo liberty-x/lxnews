@@ -2,21 +2,56 @@
 .tab-pane { display: none; }
 .tab-pane.active { display: block; }
 
+
+.jumbotron {
+  background: url("https://images.unsplash.com/uploads/14116941824817ba1f28e/78c8dff1?q=80&fm=jpg&s=5600be7f06b56681c56f55c787128538") no-repeat;
+  position:fixed !important;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  }
+
+h1 {
+  font-family: 'Monofett', arial;
+  font-size:8em;
+  color: #FBFBFC;
+  margin: 0;
+  text-align: center;
+}
+input, button {
+  border-radius: 2em;
+  height: 7em;
+  width: 70%;
+  margin: auto;
+}
+button {
+  background-color: #BBA2B3;
+}
+
+
+
+.mob-1 {
+  width: 100%;
+}
+.header {
+  height: 25%;
+}
+
+
+
+
 @media (min-width: 320px) {
   .header {
-    background: url("https://images.unsplash.com/uploads/14116941824817ba1f28e/78c8dff1?q=80&fm=jpg&s=5600be7f06b56681c56f55c787128538") no-repeat;
     background-size: 100%;
-    height: 437px;
     width: 100%;
   }
-  h1 {
-    padding-top: 4em;
-    margin: 0;
-  }
+
   html {
     margin: 0;
     padding: 0;
   }
+
+
 }
-
-

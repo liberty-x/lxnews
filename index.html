@@ -3,29 +3,32 @@
 <head>
 	<title> LX News</title>
 	<link rel="stylesheet" type="text/css" href="style.css"> </link>
+
+	<!--google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
-
+<div class="jumbotron">
   <div class="header">
 		<div class = "searchArea">
 			<h1>LX News</h1>
-			<form>
+			<form class="row">
+				<div class="mob-1">
 				<input type="text" id="searchBar"></input>
+				</div>
+				<div class="mob-1">
 				<button type="button" id="searchBtn" onclick="clickSearch();">Search</button>
+				</div>
 			</form>
+			<!--tabs-->
+			<ul id="nav-tab" class="nav">
+					 <li class="active"><a href="#instagram">Instagram</a></li>
+					 <li><a href="#guardian">Guardian</a></li>
+			</ul>
 		</div>
   </div>
-
-
-
-		<!--tabs-->
-     <ul id="nav-tab" class="nav">
-          <li class="active"><a href="#instagram">Instagram</a></li>
-          <li><a href="#guardian">Guardian</a></li>
-     </ul>
-
      <!-- Tab panes -->
      <div class="tab-content">
           <div class="tab-pane active" id="instagram">
@@ -40,6 +43,6 @@
 		<!-- link to js file -->
     <script type="text/javascript" src="guardian.js"></script>
 		<script type="text/javascript" src="instagram.js"></script>
-
+</div>
 </body>
 </html>
