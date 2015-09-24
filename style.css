@@ -30,17 +30,12 @@ button {
   background-color: #BBA2B3;
 }
 
-
-
 .mob-1 {
   width: 100%;
 }
 .header {
   height: 25%;
 }
-
-
-
 
 @media (min-width: 320px) {
   .header {
