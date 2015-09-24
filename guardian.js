@@ -1,7 +1,7 @@
 var request = new XMLHttpRequest()
-//var searchCriteria = document.getElementById('searchBar').value.toString()
-//var url = "http://content.guardianapis.com/search?q="+searchCriteria+"&api-key=444t6y2skjxcdfkdrdragsde"
-var url = "http://content.guardianapis.com/search?q=food&api-key=444t6y2skjxcdfkdrdragsde"
+var searchCriteria = document.getElementById('searchBar').value.toString()
+var url = "http://content.guardianapis.com/search?q="+searchCriteria+"&api-key=444t6y2skjxcdfkdrdragsde"
+//var url = "http://content.guardianapis.com/search?q=food&api-key=444t6y2skjxcdfkdrdragsde"
 
 request.onreadystatechange = function (){
   if (request.readyState === 4 && request.status === 200) {
@@ -19,4 +19,12 @@ function displayResultsFunction(arr) {
        arr[i].webTitle + '</a><br>';
   }
   document.getElementById("guardianResults").innerHTML = out;
+}
+
+
+document.getElementById("searchBtn").addEventListener("click", clickSearch)
+var clicked = false
+function clickSearch() {
+  clicked = true;
+  location.href = "http://liberty-x.github.io/lxnews/results";
 }
