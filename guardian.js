@@ -46,7 +46,6 @@ function displayData(response){
 }
 
 
-
 request.onreadystatechange = function (){
   // Finding out if the request and response is ready
   if (request.readyState === 4 && request.status === 200) {
@@ -56,13 +55,11 @@ request.onreadystatechange = function (){
   }
 }
 
-
-
 // runs through JSON array and creates links for each one on index.html
 function displayResultsFunction(arr) {
   var out = "";
   for (var i = 0; i < 9; i++) {
-       out += '<a href="' + arr[i].webUrl + '">' +
+       out += '<a class="newsitem" href="' + arr[i].webUrl + '">' +
        arr[i].webTitle + '</a><br>';
   }
   document.getElementById("guardianResults").innerHTML = out;
