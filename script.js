@@ -1,7 +1,5 @@
 
-//hiding all elemenst on page except search bar for clean look
-// document.getElementById("instagram").style.display = "none";
-// document.getElementById("guardian").style.display = "none";
+//hiding all elements on page except search bar for clean look
 document.getElementById("nav-tab").style.display = "none";
 
 
