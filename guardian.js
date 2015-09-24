@@ -80,8 +80,8 @@ function displayResultsFunction(arr) {
          }
 
          // activate new tab and panel
-         event.target.parentElement.className += ' active';
-         document.getElementById(event.target.href.split('#')[1]).className += ' active';
+         event.target.parentElement.className += 'active';
+         document.getElementById(event.target.href.split('#')[1]).className += 'active';
        }
 
 
