@@ -41,5 +41,5 @@ If there is time, we will link our instagram photos to corresponding guardian ar
 
 ![alt text](https://files.gitter.im/RachelBLondon/libert-x/w4AZ/12053199_10153670404533872_1271348400_n_opt.jpg "Articles link from Images")
 
-We are using Trello ![here](https://trello.com/b/XSNt2nz2/ixnews) to track tasks over the next 2 days. 
+We are using Trello [here](https://trello.com/b/XSNt2nz2/ixnews) to track tasks over the next 2 days. 
 
