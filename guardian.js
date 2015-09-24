@@ -44,6 +44,7 @@ function displayResultsFunction(arr) {
 //tabbed items on index page
 (function(){
        function onTabClick(event){
+         
          var actives = document.querySelectorAll('.active');
 
          // deactivate existing active tab and panel
