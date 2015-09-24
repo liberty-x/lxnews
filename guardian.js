@@ -1,9 +1,15 @@
+//hides the tabs when you first arrive
+document.getElementById("nav-tab").style.display = "none";
+
 var request = new XMLHttpRequest()
 
 // variable declared to test if search button has been clicked
 var clicked = false
 function clickSearch() {
-clicked = true;
+
+  clicked = true;
+
+  document.getElementById("nav-tab").style.display = "block";
   var searchCriteria = document.getElementById('searchBar').value;
   // this replaces spaces with the encoding %20 for multiple words (this signifies &s)
   var multipleWordSearch = searchCriteria.replace(/ /g, "%20");
@@ -35,7 +41,7 @@ function displayData(response){
     var oImg=document.createElement("img");
     oImg.setAttribute('src', arrphotos[j]);
     oImg.setAttribute('class', 'instaphotos');
-    document.body.appendChild(oImg);
+    document.getElementById("instagram").appendChild(oImg);
   }
 }
 
@@ -61,3 +67,25 @@ function displayResultsFunction(arr) {
   }
   document.getElementById("guardianResults").innerHTML = out;
 }
+
+//tabbed menu bar
+(function(){
+       function onTabClick(event){
+
+         var actives = document.querySelectorAll('.active');
+
+         // deactivate existing active tab and panel
+         for (var i=0; i < actives.length; i++){
+           actives[i].className = actives[i].className.replace('active', '');
+         }
+
+         // activate new tab and panel
+         event.target.parentElement.className += 'active';
+         document.getElementById(event.target.href.split('#')[1]).className += 'active';
+       }
+
+
+       var el = document.getElementById('nav-tab');
+
+       el.addEventListener('click', onTabClick, false);
+     })();
