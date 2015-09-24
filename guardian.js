@@ -38,10 +38,13 @@ function displayData(response){
   // for loop is creating an 'img' element for each array element,
   // specifying a source and class for them, then appending them to the body
   for(var j = 0 ; j < 9 ; j++){
+    var photoDiv = document.createElement("div")
+    photoDiv.setAttribute('id', 'photoDest' + [j])
+    document.getElementById("instagram").appendChild(photoDiv);
     var oImg=document.createElement("img");
     oImg.setAttribute('src', arrphotos[j]);
-    oImg.setAttribute('class', 'instaphotos');
-    document.getElementById("instagram").appendChild(oImg);
+    oImg.setAttribute('class', 'unit');
+    document.getElementById("photoDest" + [j]).appendChild(oImg);
   }
 }
 
