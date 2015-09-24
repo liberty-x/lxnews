@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (min-width: 320px) {
   .header {
     background: url("file:///Users/ruthuwemedimo/Desktop/Screen%20Shot%202015-09-24%20at%2017.20.01.png") no-repeat;
@@ -14,3 +15,9 @@
     padding: 0;
   }
 }
+=======
+
+.nav .active a { color: red; }
+.tab-pane { display: none; }
+.tab-pane.active { display: block; }
+>>>>>>> gh-pages
