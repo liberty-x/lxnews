@@ -3,6 +3,9 @@
 <head>
 	<title> LX News</title>
 	<link rel="stylesheet" type="text/css" href="style.css"> </link>
+
+	<!--normalise CSS -->
+	<link rel="stylesheet" tyep="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"> </link>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
@@ -16,41 +19,31 @@
     </form>
 
 
-  <div id="resultsOne">
-    <h1>Popular Pictures</h1>
-    <ul class="popular"></ul>
-  </div>
+	<!-- Tabs -->
+	<div>
+	<ul id="nav-tab" class="nav">
+		<li><a href="#instagram">Instagram</a></li>
+		<li class="active"><a href="#guardian">Guardian</a></li>
+	</ul>
 
-  <div id="resultsTwo">
-      <h1>News</h1>
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div class="tab-pane active" id="instagram">
+			<h3>Instagram</h3>
+	    <ul class="popular"></ul>
+		</div>
+
+		<div class="tab-pane" id="guardian">
+			<h3>Guardian</h3>
       <p id="guardianResults"></p>
-  </div>
+		</div>
+	</div>
+</div>
 
-<script>
-	function displayData(response){
-		// creating array to push urls into
-		var arrphotos = [];
-		// for loop is accessing nested photo urls and pushing into array
-		for(var i = 0; i<6;i++){
-			arrphotos.push(response['data'][i]['images']['low_resolution']['url']);
-		}
-		// for loop is creating an 'img' element for each array element,
-		// specifying a source and class for them, then appending them to the body
-	for(var j = 0 ; j < 6 ; j++){
-		var oImg=document.createElement("img");
-		oImg.setAttribute('src', arrphotos[j]);
-		oImg.setAttribute('class', 'instaphotos');
-		oImg.setAttribute('alt', 'na');
-		document.body.appendChild(oImg);
-	}
-	}
-	// create script element in the HTML page
-	var script = document.createElement('script');
-	// assing src property with callback name
-	script.src = "https://api.instagram.com/v1/tags/" + "football" + "/media/recent?access_token=2208596365.1fb234f.2d3cc38a6e354a958800809ced644f50&callback=displayData";
-	// insert script to document and load content
-	document.body.appendChild(script);
-</script>
+
+
+
+
 
 
 		<!-- link to js file -->
