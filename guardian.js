@@ -1,7 +1,14 @@
-var request = new XMLHttpRequest()
+var request = new XMLHttpRequest();
+
+var searchField = document.getElementById('searchBar');
+searchField.addEventListener('keydown', function(e) {
+  if (e.keyCode === 13) {
+    clickSearch();
+  }
+});
 
 // variable declared to test if search button has been clicked
-var clicked = false
+var clicked = false;
 function clickSearch() {
 
   clicked = true;
@@ -11,7 +18,7 @@ function clickSearch() {
   var instaSearch = searchCriteria.replace(/\s/g, '');
   // this replaces spaces with the encoding %20 for multiple words (this signifies &s)
   var multipleWordSearch = searchCriteria.replace(/ /g, "%20");
-  var url = "http://content.guardianapis.com/search?q=" + multipleWordSearch + "&api-key=444t6y2skjxcdfkdrdragsde"
+  var url = "http://content.guardianapis.com/search?q=" + multipleWordSearch + "&api-key=444t6y2skjxcdfkdrdragsde";
   request.open("GET", url);
   request.send();
   // create script element in the HTML page
@@ -23,9 +30,9 @@ function clickSearch() {
 }
 
 function displayData(response){
-  var element = document.getElementsByClassName("instaphotos");
-    for (index = element.length - 1; index >= 0; index--) {
-      element[index].parentNode.removeChild(element[index]);
+  var oldInsta = document.getElementsByClassName("instaphotos");
+    for (index = oldInsta.length - 1; index >= 0; index--) {
+      oldInsta[index].parentNode.removeChild(oldInsta[index]);
     }
   // creating array to push urls into
   var arrphotos = [];
@@ -59,15 +66,19 @@ request.onreadystatechange = function (){
 
 // function for loops and fills in nested divs in the same way as instagram photo divs
 function displayResultsFunction(arr) {
+  var oldGuard = document.getElementsByClassName("guardArticle");
+    for (index = oldGuard.length - 1; index >= 0; index--) {
+      oldGuard[index].parentNode.removeChild(oldGuard[index]);
+    }
  for(var i = 0 ; i < 9 ; i++){
    var articleDiv = document.createElement("div");
     articleDiv.setAttribute('id', 'articleDest' + [i]);
-    articleDiv.setAttribute('class', 'guardArticle')
+    articleDiv.setAttribute('class', 'guardArticle');
     document.getElementById("guardian").appendChild(articleDiv);
     var oArt=document.createElement("a");
     oArt.setAttribute('href', arr[i].webUrl);
     oArt.setAttribute('class', 'aUnit');
-    oArt.setAttribute('id', 'artUnit' + [i])
+    oArt.setAttribute('id', 'artUnit' + [i]);
     oArt.innerHTML = arr[i].webTitle;
     document.getElementById("articleDest" + [i]).appendChild(oArt);
   }

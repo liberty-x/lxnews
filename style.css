@@ -14,11 +14,10 @@
 .instaphotos{
   width: 25%;
   height: 28%;
-  border-style: dotted;
   float: left;
   position: relative;
-  margin: 0.7em;
-  background: rgba(255, 255, 255, 0.5);
+  margin: 0.75em;
+  /*background: rgba(255, 255, 255, 0.5);*/
 }
 /*styling for background image */
 img{
@@ -31,6 +30,30 @@ body {
   background-size: 100%;
 }
 
+<<<<<<< HEAD
+=======
+#guardian {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 1em;
+}
+.aUnit {
+  text-decoration: none;
+  font-family: sans-serif;
+  margin-top: 1em;
+  color: black;
+}
+.aUnit:hover {
+  color: white;
+}
+.guardArticle {
+  margin-top: 0.6em;
+}
+
+  body {
+    background: url("https://goo.gl/XBkl5C");
+    background-size: 100%;
+  }
+>>>>>>> gh-pages
   h1 {
     padding-top:0.5em;
     padding-bottom: 0.5em;
