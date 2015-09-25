@@ -1,10 +1,10 @@
 //hides the tabs when you first arrive
 document.getElementById("nav-tab").style.display = "none";
 
-var request = new XMLHttpRequest()
+var request = new XMLHttpRequest();
 
 // variable declared to test if search button has been clicked
-var clicked = false
+var clicked = false;
 function clickSearch() {
 
   clicked = true;
@@ -65,12 +65,12 @@ function displayResultsFunction(arr) {
  for(var i = 0 ; i < 9 ; i++){
    var articleDiv = document.createElement("div");
     articleDiv.setAttribute('id', 'articleDest' + [i]);
-    articleDiv.setAttribute('class', 'guardArticle')
+    articleDiv.setAttribute('class', 'guardArticle');
     document.getElementById("guardian").appendChild(articleDiv);
     var oArt=document.createElement("a");
     oArt.setAttribute('href', arr[i].webUrl);
     oArt.setAttribute('class', 'aUnit');
-    oArt.setAttribute('id', 'artUnit' + [i])
+    oArt.setAttribute('id', 'artUnit' + [i]);
     oArt.innerHTML = arr[i].webTitle;
     document.getElementById("articleDest" + [i]).appendChild(oArt);
   }
