@@ -1,3 +1,4 @@
+/*stylying for tabs */
 .nav .active a {
   color: red;
 }
@@ -9,7 +10,6 @@
 }
 
 .tab-content{
-
 /*border-style: solid;
 border-width: thin;
 border-color: black;*/
@@ -26,55 +26,62 @@ background: black;
   position: relative;
   margin: 1em;
 }
+/*styling for background image */
 img{
  width: 100%;
  height: 100%;
 }
+/*background image */
+body {
+  background: url("https://images.unsplash.com/uploads/14116941824817ba1f28e/78c8dff1?q=80&fm=jpg&s=5600be7f06b56681c56f55c787128538");
+  background-size: 100%;
+}
 
-@media (min-width: 320px) {
-  body {
-    background: url("https://goo.gl/XBkl5C");
-    background-size: 100%;
-  }
-  h1 {
-    padding-top:2.5em;
-    color: white;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 5.5em;
-  }
-  form {
-    text-align: center;
-  }
-  input {
-    padding: 1em;
-    padding-left: 8em;
-    margin-right: 2em;
-  }
-  button {
-    padding: 1em;
-    border-radius: 30%;
-  }
-  .tabBar {
-    display: inline-block;
-    width: 100%;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    margin-left: -19em;
-  }
-  ul {
-    float: right;
-  }
-	li {
-  	float: left;
-  	list-style-type: none;
-    padding-right: 3em;
-	}
-  li a {
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 1.5em;
-    color: white;
-    text-align: center !important;
-  }
+/*LX title */
+h1 {
+  padding-top:2.5em;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 5.5em;
+}
+
+/*styling for form input and button */
+form {
+  text-align: center;
+}
+
+input {
+  padding: 1em;
+  padding-left: 8em;
+  margin-right: 2em;
+}
+
+button {
+  padding: 1em;
+  border-radius: 30%;
+}
+
+/*styling for menu tabs div */
+.tabBar {
+  display: inline-block;
+  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-left: -19em;
+}
+ul {
+  float: right;
+}
+li {
+	float: left;
+	list-style-type: none;
+  padding-right: 4em;
+}
+li a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: white;
+  text-align: center !important;
 }
