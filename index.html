@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title> LX News</title>
-	<link rel="stylesheet" type="text/css" href="style.css"> </link>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title> LX News</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> </link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
+    <div class="header">
+        <div class="searchArea">
+            <h1>LX News</h1>
+            <form>
+                <input type="text" id="searchBar"></input>
+                <button type="button" id="searchBtn" onclick="clickSearch();">Search</button>
+            </form>
+        </div>
+    </div>
+    <!--tabs-->
+    <ul id="nav-tab" class="nav">
+        <li class="active"><a href="#instagram">Instagram</a></li>
+        <li><a href="#guardian">Guardian</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="instagram">
+            <!--  Where instaPhoto is filling up -->
+        </div>
 
-  <div class="header">
-		<div class = "searchArea">
-			<h1>LX News</h1>
-			<form>
-				<input type="text" id="searchBar"></input>
-				<button type="button" id="searchBtn" onclick="clickSearch();">Search</button>
-			</form>
-		</div>
-  </div>
-
-
-
-		<!--tabs-->
-     <ul id="nav-tab" class="nav">
-          <li class="active"><a href="#instagram">Instagram</a></li>
-          <li><a href="#guardian">Guardian</a></li>
-     </ul>
-
-     <!-- Tab panes -->
-     <div class="tab-content">
-          <div class="tab-pane active" id="instagram">
-         <ul class="popular"></ul>
-          </div>
-
-          <div class="tab-pane" id="guardian">
-      <p id="guardianResults"></p>
-          </div>
-     </div>
-
-		<!-- link to js file -->
+        <div class="tab-pane" id="guardian">
+            <!--  Where guardArticle is filling up -->
+        </div>
+    </div>
+    <!-- link to js file -->
     <script type="text/javascript" src="guardian.js"></script>
-		<script type="text/javascript" src="instagram.js"></script>
-
+    <script type="text/javascript" src="instagram.js"></script>
 </body>
+
 </html>
+
