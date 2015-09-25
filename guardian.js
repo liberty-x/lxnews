@@ -8,7 +8,7 @@ searchField.addEventListener('keydown', function(e) {
 });
 
 // variable declared to test if search button has been clicked
-var clicked = false
+var clicked = false;
 function clickSearch() {
 
   clicked = true;
