@@ -11,6 +11,7 @@ function clickSearch() {
 
   document.getElementById("nav-tab").style.display = "block";
   var searchCriteria = document.getElementById('searchBar').value;
+  var instaSearch = searchCriteria.replace(/\s/g, '');
   // this replaces spaces with the encoding %20 for multiple words (this signifies &s)
   var multipleWordSearch = searchCriteria.replace(/ /g, "%20");
   var url = "http://content.guardianapis.com/search?q=" + multipleWordSearch + "&api-key=444t6y2skjxcdfkdrdragsde"
@@ -18,8 +19,8 @@ function clickSearch() {
   request.send();
   // create script element in the HTML page
   var script = document.createElement('script');
-  // asserting src property with callback name
-  script.src = "https://api.instagram.com/v1/tags/"  + searchCriteria + "/media/recent?access_token=2208596365.1fb234f.2d3cc38a6e354a958800809ced644f50&callback=displayData";
+  // assing src property with callback name
+  script.src = "https://api.instagram.com/v1/tags/"  + instaSearch + "/media/recent?access_token=2208596365.1fb234f.2d3cc38a6e354a958800809ced644f50&callback=displayData";
   // insert script to document and load content
   document.body.appendChild(script);
 }
