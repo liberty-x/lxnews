@@ -22,11 +22,11 @@
   position: relative;
   margin: 0.5em;
 }
-#instagram {
+/*#instagram {
   height: 18em;
-  /*background: rgba(4, 3, 38, 0.5);*/
-  /*display: none;*/
-}
+  background: rgba(4, 3, 38, 0.5);
+  display: none;
+}*/
 
 
 /*styling for background image */
@@ -124,6 +124,12 @@ li a {
 
 @media (min-width: 415px) {
   .aUnit {
+    text-align: center;
+  }
+  #instagram {
+    margin-left: 10%;
+  }
+  #guardian {
     text-align: center;
   }
 }
