@@ -1,6 +1,6 @@
 # LX News
 
-Link [here](http://liberty-x.github.io/lxnews/)
+Link [here](http://liberty-x.github.io/lxnews/). Based on mobile-first design- don't be scared when it doesn't look great on desktop! 
 
 ## Who?
 
@@ -37,5 +37,5 @@ We are using Trello [here](https://trello.com/b/XSNt2nz2/ixnews) to track tasks 
 
 ### Testing
 
-Please go to our test page [here](http://liberty-x.github.io/lxnews/tests/tests) to test the functionality of our page. 
+Please go to our test page [here](http://liberty-x.github.io/lxnews/tests/tests) to test the functionality of our page. This doesn't include our styling, but does test some elements of our Javascript file. 
 
