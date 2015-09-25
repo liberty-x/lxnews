@@ -40,6 +40,7 @@ function displayData(response){
   for(var j = 0 ; j < 9 ; j++){
     var photoDiv = document.createElement("div");
     photoDiv.setAttribute('id', 'photoDest' + [j]);
+    photoDiv.setAttribute('class', 'instaphotos');
     document.getElementById("instagram").appendChild(photoDiv);
     var oImg=document.createElement("img");
     oImg.setAttribute('src', arrphotos[j]);
