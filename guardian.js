@@ -1,7 +1,3 @@
-
-//hides the tabs when you first arrive
-document.getElementById("nav-tab").style.display = "none";
-
 var request = new XMLHttpRequest();
 
 var searchField = document.getElementById('searchBar');
