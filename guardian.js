@@ -18,7 +18,7 @@ function clickSearch() {
   var instaSearch = searchCriteria.replace(/\s/g, '');
   // this replaces spaces with the encoding %20 for multiple words (this signifies &s)
   var multipleWordSearch = searchCriteria.replace(/ /g, "%20");
-  var url = "http://content.guardianapis.com/search?q=" + multipleWordSearch + "&api-key=444t6y2skjxcdfkdrdragsde"
+  var url = "http://content.guardianapis.com/search?q=" + multipleWordSearch + "&api-key=444t6y2skjxcdfkdrdragsde";
   request.open("GET", url);
   request.send();
   // create script element in the HTML page
@@ -73,12 +73,12 @@ function displayResultsFunction(arr) {
  for(var i = 0 ; i < 9 ; i++){
    var articleDiv = document.createElement("div");
     articleDiv.setAttribute('id', 'articleDest' + [i]);
-    articleDiv.setAttribute('class', 'guardArticle')
+    articleDiv.setAttribute('class', 'guardArticle');
     document.getElementById("guardian").appendChild(articleDiv);
     var oArt=document.createElement("a");
     oArt.setAttribute('href', arr[i].webUrl);
     oArt.setAttribute('class', 'aUnit');
-    oArt.setAttribute('id', 'artUnit' + [i])
+    oArt.setAttribute('id', 'artUnit' + [i]);
     oArt.innerHTML = arr[i].webTitle;
     document.getElementById("articleDest" + [i]).appendChild(oArt);
   }
