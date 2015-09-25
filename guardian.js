@@ -3,6 +3,7 @@ var request = new XMLHttpRequest();
 var searchField = document.getElementById('searchBar');
 searchField.addEventListener('keydown', function(e) {
   if (e.keyCode === 13) {
+    e.preventDefault();
     clickSearch();
   }
 });
@@ -10,7 +11,6 @@ searchField.addEventListener('keydown', function(e) {
 // variable declared to test if search button has been clicked
 var clicked = false;
 function clickSearch() {
-
   clicked = true;
   document.getElementById("nav-tab").style.display = "block";
   var searchCriteria = document.getElementById('searchBar').value;
