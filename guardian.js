@@ -12,7 +12,6 @@ var clicked = false;
 function clickSearch() {
 
   clicked = true;
-
   document.getElementById("nav-tab").style.display = "block";
   var searchCriteria = document.getElementById('searchBar').value;
   var instaSearch = searchCriteria.replace(/\s/g, '');
@@ -80,6 +79,7 @@ function displayResultsFunction(arr) {
     oArt.setAttribute('class', 'aUnit');
     oArt.setAttribute('id', 'artUnit' + [i]);
     oArt.innerHTML = arr[i].webTitle;
+    oArt.setAttribute('target', "_blank");
     document.getElementById("articleDest" + [i]).appendChild(oArt);
   }
 }
