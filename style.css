@@ -62,6 +62,7 @@ img{
   button {
     padding: 0.5em;
     border-radius: 30%;
+    background: grey;
   }
   /*.tabBar {
     display: inline-block;
@@ -88,4 +89,13 @@ img{
 
 #nav-tab {
   display: none;
+}
+
+@media (min-width: 415px) {
+  h1 {
+    color: red;
+  }
+  .aUnit {
+    text-align: center;
+  }
 }
