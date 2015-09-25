@@ -1,4 +1,11 @@
-var request = new XMLHttpRequest()
+var request = new XMLHttpRequest();
+
+var searchField = document.getElementById('searchBar');
+searchField.addEventListener('keydown', function(e) {
+  if (e.keyCode === 13) {
+    clickSearch();
+  }
+});
 
 // variable declared to test if search button has been clicked
 var clicked = false
