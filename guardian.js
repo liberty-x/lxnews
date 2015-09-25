@@ -18,7 +18,7 @@ function clickSearch() {
   request.send();
   // create script element in the HTML page
   var script = document.createElement('script');
-  // assing src property with callback name
+  // asserting src property with callback name
   script.src = "https://api.instagram.com/v1/tags/"  + searchCriteria + "/media/recent?access_token=2208596365.1fb234f.2d3cc38a6e354a958800809ced644f50&callback=displayData";
   // insert script to document and load content
   document.body.appendChild(script);
