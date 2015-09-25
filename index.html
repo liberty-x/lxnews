@@ -8,20 +8,24 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="searchArea">
-            <h1>LX News</h1>
-            <form>
-                <input type="text" id="searchBar"></input>
-                <button type="button" id="searchBtn" onclick="clickSearch();">Search</button>
-            </form>
-        </div>
-    </div>
-    <!--tabs-->
-    <ul id="nav-tab" class="nav">
-        <li class="active"><a href="#instagram">Instagram</a></li>
-        <li><a href="#guardian">Guardian</a></li>
-    </ul>
+
+
+			<h1>LX News</h1>
+			<form>
+				<input type="text" id="searchBar"></input>
+				<button type="button" id="searchBtn" onclick="clickSearch();">Search</button>
+			</form>
+
+
+		<!--tabs-->
+		<div class = "tabBar">
+     <ul id="nav-tab" class="nav">
+          <li class="active"><a href="#instagram">Instagram</a></li>
+          <li><a href="#guardian">Guardian</a></li>
+     </ul>
+	 </div>
+
+
     <!-- Tab panes -->
     <div class="tab-content">
         <div class="tab-pane active" id="instagram">
@@ -33,6 +37,7 @@
         </div>
     </div>
     <!-- link to js file -->
+
     <script type="text/javascript" src="guardian.js"></script>
 </body>
 
