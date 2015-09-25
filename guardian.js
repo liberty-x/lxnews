@@ -12,12 +12,13 @@ var clicked = false;
 function clickSearch() {
 
   clicked = true;
+
   document.getElementById("nav-tab").style.display = "block";
   var searchCriteria = document.getElementById('searchBar').value;
   var instaSearch = searchCriteria.replace(/\s/g, '');
   // this replaces spaces with the encoding %20 for multiple words (this signifies &s)
   var multipleWordSearch = searchCriteria.replace(/ /g, "%20");
-  var url = "http://content.guardianapis.com/search?q=" + multipleWordSearch + "&api-key=444t6y2skjxcdfkdrdragsde"
+  var url = "http://content.guardianapis.com/search?q=" + multipleWordSearch + "&api-key=444t6y2skjxcdfkdrdragsde";
   request.open("GET", url);
   request.send();
   // create script element in the HTML page
@@ -28,11 +29,10 @@ function clickSearch() {
   document.body.appendChild(script);
 }
 
-
 function displayData(response){
-  var element = document.getElementsByClassName("instaphotos");
-    for (index = element.length - 1; index >= 0; index--) {
-      element[index].parentNode.removeChild(element[index]);
+  var oldInsta = document.getElementsByClassName("instaphotos");
+    for (index = oldInsta.length - 1; index >= 0; index--) {
+      oldInsta[index].parentNode.removeChild(oldInsta[index]);
     }
   // creating array to push urls into
   var arrphotos = [];
@@ -66,6 +66,10 @@ request.onreadystatechange = function (){
 
 // function for loops and fills in nested divs in the same way as instagram photo divs
 function displayResultsFunction(arr) {
+  var oldGuard = document.getElementsByClassName("guardArticle");
+    for (index = oldGuard.length - 1; index >= 0; index--) {
+      oldGuard[index].parentNode.removeChild(oldGuard[index]);
+    }
  for(var i = 0 ; i < 9 ; i++){
    var articleDiv = document.createElement("div");
     articleDiv.setAttribute('id', 'articleDest' + [i]);
