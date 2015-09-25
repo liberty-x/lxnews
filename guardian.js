@@ -3,12 +3,18 @@ document.getElementById("nav-tab").style.display = "none";
 
 var request = new XMLHttpRequest();
 
+var searchField = document.getElementById('searchBar');
+searchField.addEventListener('keydown', function(e) {
+  if (e.keyCode === 13) {
+    clickSearch();
+  }
+});
+
 // variable declared to test if search button has been clicked
 var clicked = false;
 function clickSearch() {
 
   clicked = true;
-
   document.getElementById("nav-tab").style.display = "block";
   var searchCriteria = document.getElementById('searchBar').value;
   var instaSearch = searchCriteria.replace(/\s/g, '');
@@ -24,6 +30,7 @@ function clickSearch() {
   // insert script to document and load content
   document.body.appendChild(script);
 }
+
 
 function displayData(response){
   var element = document.getElementsByClassName("instaphotos");
