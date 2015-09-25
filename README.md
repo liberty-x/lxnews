@@ -1,4 +1,7 @@
 # LX News
+
+Link [here](http://liberty-x.github.io/lxnews/)
+
 ## Who?
 
 Liberty-X, a project team in the 6th iteration of the Founders & Coders academy. Members: Justen Barget, Rachel Black, Huw Davies and Ruth Uwemedimo.
@@ -17,29 +20,22 @@ Users input search terms in a search bar on the landing page that returns images
 
 ### Depedancies
 * Instagram API
-* Guardian API (stretch)
+* Guardian API
+* QUnit (for testing)
 
 ### Wireframes
 
 Landing page layout like so:
 
-![alt text](https://files.gitter.im/RachelBLondon/libert-x/5R1O/12033292_10153670404443872_256205823_n_opt.jpg "Landing Page")
+![alt text](https://files.gitter.im/RachelBLondon/libert-x/xILG/finalwireframe.jpg "Landing Page")
 
-The search button will link to the instagram results page:
+Where there is a 'Guardian' tab and an 'Instagram' Tab.
 
-![alt text](https://files.gitter.im/RachelBLondon/libert-x/XkUl/12026562_10153670404513872_41296169_n_opt.jpg "Instagram Feed")
-
-###### Stretch Wireframes
-
-Another page will display a list of guardian articles related to the search terms.
-
-![alt text](https://files.gitter.im/RachelBLondon/libert-x/Y9Xf/12033790_10153670404398872_236751255_n_opt.jpg "Guardian Articles Feed")
-
-###### Further Stretch Wireframes
-
-If there is time, we will link our instagram photos to corresponding guardian articles. 
-
-![alt text](https://files.gitter.im/RachelBLondon/libert-x/w4AZ/12053199_10153670404533872_1271348400_n_opt.jpg "Articles link from Images")
+### Task Delegation
 
 We are using Trello [here](https://trello.com/b/XSNt2nz2/ixnews) to track tasks over the next 2 days. 
+
+### Testing
+
+Please go to our test page [here](http://liberty-x.github.io/lxnews/tests/tests) to test the functionality of our page. 
 
