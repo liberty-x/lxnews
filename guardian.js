@@ -1,5 +1,5 @@
 //hides the tabs when you first arrive
-document.getElementById("nav-tab").style.display = "none";
+//document.getElementById("nav-tab").style.display = "none";
 
 var request = new XMLHttpRequest()
 

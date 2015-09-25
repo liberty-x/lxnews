@@ -8,54 +8,47 @@
   display: block;
 }
 
-.tab-content{
-
-/*border-style: solid;
-border-width: thin;
-border-color: black;*/
-height: 95%;
-/*background: rgba(255, 255, 255, 0.5);*/
-background: black;
-}
-
 .instaphotos{
   width: 25%;
   height: 28%;
   border-style: dotted;
   float: left;
   position: relative;
-  margin: 1em;
+  margin: 0.7em;
+  background: rgba(255, 255, 255, 0.5);
 }
 img{
  width: 100%;
  height: 100%;
 }
 
-@media (min-width: 320px) {
+
   body {
     background: url("https://goo.gl/XBkl5C");
     background-size: 100%;
   }
   h1 {
-    padding-top:2.5em;
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
     color: white;
     text-align: center;
     font-family: sans-serif;
-    font-size: 5.5em;
+    font-size: 2em;
+    font-weight: lighter;
   }
   form {
     text-align: center;
   }
   input {
-    padding: 1em;
-    padding-left: 8em;
-    margin-right: 2em;
+    padding: 0.5em;
+    padding-left: 3em;
+    margin-right: 1em;
   }
   button {
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 30%;
   }
-  .tabBar {
+  /*.tabBar {
     display: inline-block;
     width: 100%;
     padding-top: 3em;
@@ -76,5 +69,8 @@ img{
     font-size: 1.5em;
     color: white;
     text-align: center !important;
-  }
+  }*/
+
+#nav-tab {
+  display: none;
 }
