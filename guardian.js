@@ -69,7 +69,7 @@ function displayResultsFunction(arr) {
     for (index = oldGuard.length - 1; index >= 0; index--) {
       oldGuard[index].parentNode.removeChild(oldGuard[index]);
     }
- for(var i = 0 ; i < 9 ; i++){
+ for(var i = 0 ; i < 5 ; i++){
    var articleDiv = document.createElement("div");
     articleDiv.setAttribute('id', 'articleDest' + [i]);
     articleDiv.setAttribute('class', 'guardArticle');
@@ -79,6 +79,7 @@ function displayResultsFunction(arr) {
     oArt.setAttribute('class', 'aUnit');
     oArt.setAttribute('id', 'artUnit' + [i]);
     oArt.innerHTML = arr[i].webTitle;
+    oArt.setAttribute('target', "_blank");
     document.getElementById("articleDest" + [i]).appendChild(oArt);
   }
 }
