@@ -1,6 +1,3 @@
-//hides the tabs when you first arrive
-document.getElementById("nav-tab").style.display = "none";
-
 var request = new XMLHttpRequest()
 
 // variable declared to test if search button has been clicked
