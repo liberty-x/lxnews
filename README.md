@@ -29,7 +29,7 @@ Landing page layout like so:
 
 ![alt text](https://files.gitter.im/RachelBLondon/libert-x/xILG/finalwireframe.jpg "Landing Page")
 
-Where there is a 'Guardian' tab and a 'Instagram' Tab.
+Where there is a 'Guardian' tab and an 'Instagram' Tab.
 
 ### Task Delegation
 
