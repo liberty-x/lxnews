@@ -1,3 +1,7 @@
 language: node_js
 node_js:
   - 0.12
+
+env:
+- MY_VAR=EverythignIsAwesome
+- NODE_ENV=TEST
