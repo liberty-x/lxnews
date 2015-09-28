@@ -1,3 +1,5 @@
+<img src = "https://travis-ci.org/liberty-x/lxnews.svg?branch=justen">
+
 # LX News
 
 Link [here](http://liberty-x.github.io/lxnews/). Based on mobile-first design- don't be scared when it doesn't look great on desktop! 
