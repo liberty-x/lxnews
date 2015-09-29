@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/liberty-x/lxnews.svg?branch=justen)](https://travis-ci.org/liberty-x/lxnews)
+[![Code Climate](https://codeclimate.com/github/liberty-x/lxnews/badges/gpa.svg)](https://codeclimate.com/github/liberty-x/lxnews)
 # LX News
 
 Link [here](http://liberty-x.github.io/lxnews/). Based on mobile-first design- don't be scared when it doesn't look great on desktop! 
