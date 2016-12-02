@@ -34,7 +34,7 @@ function displayData(response){
     }
   // for loop is accessing nested photo urls and pushing into array
   for(var i = 0; i<9;i++){
-    arrphotos.push(response['data'][i]['images']['low_resolution']['url']);
+    arrphotos.push(response['results'][i]['images']['low_resolution']['url']);
   }
   // for loop is creating an 'img' element for each array element,
   // specifying a source and class for them, then appending them to the body
